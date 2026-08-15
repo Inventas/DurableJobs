@@ -42,10 +42,7 @@ struct DurableQueueTests {
         let recorder = JobRecorder()
         let database = try TestDatabaseFactory.inMemory()
         var registry = JobRegistry()
-        try registry.register(TestJob.self) { job, context in
-            await recorder.record(job.value)
-            try await context.reportProgress(0.5)
-        }
+        try registry.register(TestJobHandler(recorder: recorder))
         let queue = try DurableQueue(database: database, registry: registry)
 
         let receipt = try await queue.dispatch(TestJob(value: "one"))
