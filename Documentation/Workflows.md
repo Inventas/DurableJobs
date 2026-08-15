@@ -67,5 +67,5 @@ try await queue.cancelBatch(batch.id)
 
 Batch progress treats each terminal member as complete and averages active
 member progress. The optional completion job is blocked until all members are
-terminal. Jobs must exchange durable application record IDs. DurableQueuer does
+terminal. Jobs must exchange durable application record IDs. DurableJobs does
 not serialize closures or pass handler output between jobs.

@@ -1,6 +1,6 @@
 # Reliability and delivery semantics
 
-DurableQueuer stores job state in SQLite and uses Queuer only to execute a
+DurableJobs stores job state in SQLite and uses Queuer only to execute a
 claimed attempt in the current process. The database is the source of truth;
 the in-memory `OperationQueue` is not a recovery log.
 

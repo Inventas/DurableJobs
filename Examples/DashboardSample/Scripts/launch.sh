@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
-APP="$ROOT/DurableQueuerDashboardSample.app"
+APP="$ROOT/DurableJobsDashboardSample.app"
 
 if [[ ! -d "$APP" ]]; then
   echo "ERROR: Run ./Scripts/package_app.sh first." >&2

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
-APP_NAME=DurableQueuerDashboardSample
+APP_NAME=DurableJobsDashboardSample
 
 pkill -x "$APP_NAME" 2>/dev/null || true
 

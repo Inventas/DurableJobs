@@ -1,6 +1,6 @@
 # BackgroundTasks integration
 
-`DurableQueuerBackgroundTasks` adapts five durable execution lanes to Apple's
+`DurableJobsBackgroundTasks` adapts five durable execution lanes to Apple's
 BackgroundTasks framework. The system decides when a request runs. An
 `earliestBeginDate` is a lower bound, not a deadline or an execution promise.
 
@@ -115,7 +115,7 @@ or Neural Engine work.
 
 ## Availability and limits
 
-- Core DurableQueuer: iOS 15+, macOS 13+.
+- Core DurableJobs: iOS 15+, macOS 13+.
 - Standard `BGTaskScheduler` integration: iOS 13+, gated by the host target's
   deployment setting.
 - Continued processing: iOS 26+, guarded at each call site.

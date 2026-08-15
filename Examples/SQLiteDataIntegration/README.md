@@ -1,8 +1,8 @@
 # SQLiteData compatibility fixture
 
 This separate Swift package checks the intended host-app setup without adding
-SQLiteData to DurableQueuer. It pins SQLiteData 1.8.2 for iOS 15 and supplies
-the same `DatabasePool` to SQLiteData and DurableQueuer.
+SQLiteData to DurableJobs. It pins SQLiteData 1.8.2 for iOS 15 and supplies
+the same `DatabasePool` to SQLiteData and DurableJobs.
 
 ```sh
 swift build --package-path Examples/SQLiteDataIntegration

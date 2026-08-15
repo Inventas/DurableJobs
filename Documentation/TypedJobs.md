@@ -1,6 +1,6 @@
 # Typed jobs
 
-DurableQueuer follows a Laravel-style split between a serializable job value
+DurableJobs follows a Laravel-style split between a serializable job value
 and its registered handler. A job type declares a stable `typeIdentifier`, a
 `payloadVersion`, and `JobDefaults`:
 

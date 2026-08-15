@@ -1,6 +1,6 @@
-# DurableQueuer
+# DurableJobs
 
-DurableQueuer adds a typed, durable job layer on top of Queuer and GRDB. Jobs
+DurableJobs adds a typed, durable job layer on top of Queuer and GRDB. Jobs
 are encoded as `Codable` payloads in SQLite, claimed with a lease, and then
 run through Queuer's in-process executor. The package targets iOS 15 and later
 and macOS 13 and later.
@@ -19,7 +19,7 @@ persisted payload.
 
 ```swift
 import Foundation
-import DurableQueuer
+import DurableJobs
 import GRDB
 
 struct SendInvoice: DurableJob {
@@ -93,7 +93,7 @@ make the drain throw because the failure or retry state is already durable.
 
 Use one `DatabasePool` for the app's records and the durable queue. If the app
 uses Point-Free SQLiteData, assign this same writer as SQLiteData's default
-database, then pass it to `DurableQueue`. DurableQueuer creates only its own
+database, then pass it to `DurableQueue`. DurableJobs creates only its own
 `durable_queue_*` tables and runs its migration on that writer.
 
 ```swift
@@ -161,15 +161,15 @@ IDs; the queue does not pass arbitrary output data between steps.
 
 ## In-app dashboard
 
-`DurableQueuerDashboard` is an optional SwiftUI product for development and
-support builds. The core `DurableQueuer` product does not link SwiftUI and does
+`DurableJobsDashboard` is an optional SwiftUI product for development and
+support builds. The core `DurableJobs` product does not link SwiftUI and does
 not require the dashboard. Add the dashboard product only to targets that show
 the tool, then present its root view with the same queue instance used by the
 application:
 
 ```swift
 #if DEBUG
-import DurableQueuerDashboard
+import DurableJobsDashboard
 
 DurableQueueDashboard(queue: queue)
 #endif
@@ -224,7 +224,7 @@ See [the integration fixture](Examples/SQLiteDataIntegration/README.md).
 
 ## BackgroundTasks
 
-`DurableQueuerBackgroundTasks` maps the five `JobExecutionLane` values to five
+`DurableJobsBackgroundTasks` maps the five `JobExecutionLane` values to five
 identifiers. Create identifiers from the app's reverse-DNS bundle identifier:
 
 ```swift
@@ -258,7 +258,7 @@ immediate execution or a replacement for a background `URLSession` transfer.
 
 ## Scope
 
-DurableQueuer does not provide a remote broker, distributed workers, exactly-once
+DurableJobs does not provide a remote broker, distributed workers, exactly-once
 side effects, arbitrary closure serialization, continuous network reachability,
 cross-device synchronization, or automatic URLSession transfer
 management. It also cannot stop a non-cooperative synchronous handler. Those

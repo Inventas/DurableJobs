@@ -1,12 +1,12 @@
 # Package architecture
 
-DurableQueuer groups source files by responsibility. Swift Package Manager
+DurableJobs groups source files by responsibility. Swift Package Manager
 finds source files recursively, so these folders do not change the package's
 public modules.
 
 ```text
 Sources/
-├── DurableQueuer/
+├── DurableJobs/
 │   ├── Jobs/          Job contracts, state, events, and inspection models
 │   ├── Middleware/    Handler middleware and durable coordination
 │   ├── Queue/         Dispatch, execution, operations, and state transitions
@@ -14,15 +14,15 @@ Sources/
 │   ├── Scheduling/    Dispatch options, retry policy, and execution lanes
 │   ├── Storage/       GRDB records, database helpers, and queue schema
 │   └── Workflows/     Chain and batch public models
-├── DurableQueuerBackgroundTasks/
+├── DurableJobsBackgroundTasks/
 │   ├── Bridge/        Queue-to-BackgroundTasks coordination
 │   ├── Execution/     Launch invocation, cancellation, and registration state
 │   └── Scheduling/    Identifiers and system scheduling adapters
-├── DurableQueuerDashboard/
+├── DurableJobsDashboard/
 │   ├── Components/    Reusable SwiftUI dashboard components
 │   ├── State/         Refresh, paging, payload, and operation coordination
 │   └── Views/         Adaptive dashboard, list, and detail screens
-└── DurableQueuerTestSupport/  Shared public test database support
+└── DurableJobsTestSupport/  Shared public test database support
 ```
 
 Tests use the same split where it helps navigation. Queue behavior tests are in
@@ -31,7 +31,7 @@ in `Support`.
 
 ## Optional dashboard boundary
 
-`DurableQueuerDashboard` depends on `DurableQueuer`; the core target does not
+`DurableJobsDashboard` depends on `DurableJobs`; the core target does not
 depend on the dashboard or SwiftUI. Applications opt in by linking the dashboard
 product and constructing `DurableQueueDashboard` with a queue or another
 `DurableQueueDashboardDataSource` implementation.

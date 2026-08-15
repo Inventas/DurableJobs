@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "DurableQueuerDashboardSample",
+    name: "DurableJobsDashboardSample",
     platforms: [
         .macOS(.v13),
     ],
     products: [
         .executable(
-            name: "DurableQueuerDashboardSample",
-            targets: ["DurableQueuerDashboardSample"]
+            name: "DurableJobsDashboardSample",
+            targets: ["DurableJobsDashboardSample"]
         ),
     ],
     dependencies: [
@@ -22,18 +22,18 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "DurableQueuerDashboardSample",
+            name: "DurableJobsDashboardSample",
             dependencies: [
-                .product(name: "DurableQueuer", package: "DurableQueuer"),
-                .product(name: "DurableQueuerDashboard", package: "DurableQueuer"),
+                .product(name: "DurableJobs", package: "DurableJobs"),
+                .product(name: "DurableJobsDashboard", package: "DurableJobs"),
                 .product(name: "GRDB", package: "GRDB.swift"),
             ]
         ),
         .testTarget(
-            name: "DurableQueuerDashboardSampleTests",
+            name: "DurableJobsDashboardSampleTests",
             dependencies: [
-                "DurableQueuerDashboardSample",
-                .product(name: "DurableQueuer", package: "DurableQueuer"),
+                "DurableJobsDashboardSample",
+                .product(name: "DurableJobs", package: "DurableJobs"),
                 .product(name: "GRDB", package: "GRDB.swift"),
             ]
         ),

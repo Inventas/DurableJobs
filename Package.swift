@@ -3,24 +3,24 @@
 import PackageDescription
 
 let package = Package(
-    name: "DurableQueuer",
+    name: "DurableJobs",
     platforms: [
         .iOS(.v15),
         .macOS(.v13),
     ],
     products: [
-        .library(name: "DurableQueuer", targets: ["DurableQueuer"]),
+        .library(name: "DurableJobs", targets: ["DurableJobs"]),
         .library(
-            name: "DurableQueuerBackgroundTasks",
-            targets: ["DurableQueuerBackgroundTasks"]
+            name: "DurableJobsBackgroundTasks",
+            targets: ["DurableJobsBackgroundTasks"]
         ),
         .library(
-            name: "DurableQueuerDashboard",
-            targets: ["DurableQueuerDashboard"]
+            name: "DurableJobsDashboard",
+            targets: ["DurableJobsDashboard"]
         ),
         .library(
-            name: "DurableQueuerTestSupport",
-            targets: ["DurableQueuerTestSupport"]
+            name: "DurableJobsTestSupport",
+            targets: ["DurableJobsTestSupport"]
         ),
     ],
     dependencies: [
@@ -29,47 +29,47 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "DurableQueuer",
+            name: "DurableJobs",
             dependencies: [
                 .product(name: "GRDB", package: "GRDB.swift"),
                 .product(name: "Queuer", package: "Queuer"),
             ]
         ),
         .target(
-            name: "DurableQueuerBackgroundTasks",
-            dependencies: ["DurableQueuer"]
+            name: "DurableJobsBackgroundTasks",
+            dependencies: ["DurableJobs"]
         ),
         .target(
-            name: "DurableQueuerDashboard",
-            dependencies: ["DurableQueuer"]
+            name: "DurableJobsDashboard",
+            dependencies: ["DurableJobs"]
         ),
         .target(
-            name: "DurableQueuerTestSupport",
+            name: "DurableJobsTestSupport",
             dependencies: [
-                "DurableQueuer",
+                "DurableJobs",
                 .product(name: "GRDB", package: "GRDB.swift"),
             ]
         ),
         .testTarget(
-            name: "DurableQueuerTests",
+            name: "DurableJobsTests",
             dependencies: [
-                "DurableQueuer",
-                "DurableQueuerTestSupport",
+                "DurableJobs",
+                "DurableJobsTestSupport",
                 .product(name: "GRDB", package: "GRDB.swift"),
             ]
         ),
         .testTarget(
-            name: "DurableQueuerBackgroundTasksTests",
+            name: "DurableJobsBackgroundTasksTests",
             dependencies: [
-                "DurableQueuerBackgroundTasks",
-                "DurableQueuerTestSupport",
+                "DurableJobsBackgroundTasks",
+                "DurableJobsTestSupport",
             ]
         ),
         .testTarget(
-            name: "DurableQueuerDashboardTests",
+            name: "DurableJobsDashboardTests",
             dependencies: [
-                "DurableQueuerDashboard",
-                "DurableQueuerTestSupport",
+                "DurableJobsDashboard",
+                "DurableJobsTestSupport",
             ]
         ),
     ],

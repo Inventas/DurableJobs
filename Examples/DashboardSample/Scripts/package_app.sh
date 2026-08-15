@@ -5,8 +5,8 @@ CONF=${1:-release}
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 cd "$ROOT"
 
-APP_NAME=DurableQueuerDashboardSample
-BUNDLE_ID=com.example.DurableQueuerDashboardSample
+APP_NAME=DurableJobsDashboardSample
+BUNDLE_ID=com.example.DurableJobsDashboardSample
 MACOS_MIN_VERSION=13.0
 
 source "$ROOT/version.env"
@@ -34,7 +34,7 @@ cat > "$APP/Contents/Info.plist" <<PLIST
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key><string>${APP_NAME}</string>
-    <key>CFBundleDisplayName</key><string>DurableQueuer Dashboard Sample</string>
+    <key>CFBundleDisplayName</key><string>DurableJobs Dashboard Sample</string>
     <key>CFBundleIdentifier</key><string>${BUNDLE_ID}</string>
     <key>CFBundleExecutable</key><string>${APP_NAME}</string>
     <key>CFBundlePackageType</key><string>APPL</string>
