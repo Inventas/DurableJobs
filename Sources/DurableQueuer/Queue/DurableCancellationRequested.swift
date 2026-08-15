@@ -1,0 +1,1 @@
+struct DurableCancellationRequested: Error, Sendable {}

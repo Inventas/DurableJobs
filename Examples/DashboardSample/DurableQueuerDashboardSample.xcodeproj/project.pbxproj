@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000101 /* DashboardSampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000201 /* DashboardSampleModel.swift */; };
+		100000000000000000000102 /* DashboardSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000202 /* DashboardSampleView.swift */; };
+		100000000000000000000103 /* DurableQueuerDashboardSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000203 /* DurableQueuerDashboardSampleApp.swift */; };
+		100000000000000000000104 /* SampleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000204 /* SampleConstants.swift */; };
+		100000000000000000000105 /* SampleControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000205 /* SampleControlBar.swift */; };
+		100000000000000000000106 /* SampleJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000206 /* SampleJob.swift */; };
+		100000000000000000000107 /* SampleJobError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000207 /* SampleJobError.swift */; };
+		100000000000000000000108 /* SampleJobRegistryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000208 /* SampleJobRegistryFactory.swift */; };
+		100000000000000000000109 /* SamplePayloadFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000209 /* SamplePayloadFormatter.swift */; };
+		100000000000000000000110 /* DurableQueuer in Frameworks */ = {isa = PBXBuildFile; productRef = 100000000000000000000701 /* DurableQueuer */; };
+		100000000000000000000111 /* DurableQueuerDashboard in Frameworks */ = {isa = PBXBuildFile; productRef = 100000000000000000000702 /* DurableQueuerDashboard */; };
+		100000000000000000000112 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 100000000000000000000703 /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000201 /* DashboardSampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSampleModel.swift; sourceTree = "<group>"; };
+		100000000000000000000202 /* DashboardSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSampleView.swift; sourceTree = "<group>"; };
+		100000000000000000000203 /* DurableQueuerDashboardSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurableQueuerDashboardSampleApp.swift; sourceTree = "<group>"; };
+		100000000000000000000204 /* SampleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConstants.swift; sourceTree = "<group>"; };
+		100000000000000000000205 /* SampleControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleControlBar.swift; sourceTree = "<group>"; };
+		100000000000000000000206 /* SampleJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJob.swift; sourceTree = "<group>"; };
+		100000000000000000000207 /* SampleJobError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJobError.swift; sourceTree = "<group>"; };
+		100000000000000000000208 /* SampleJobRegistryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJobRegistryFactory.swift; sourceTree = "<group>"; };
+		100000000000000000000209 /* SamplePayloadFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePayloadFormatter.swift; sourceTree = "<group>"; };
+		100000000000000000000210 /* DurableQueuerDashboardSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurableQueuerDashboardSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000000301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000110 /* DurableQueuer in Frameworks */,
+				100000000000000000000111 /* DurableQueuerDashboard in Frameworks */,
+				100000000000000000000112 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000401 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000402 /* DurableQueuerDashboardSample */,
+				100000000000000000000403 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000402 /* DurableQueuerDashboardSample */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000201 /* DashboardSampleModel.swift */,
+				100000000000000000000202 /* DashboardSampleView.swift */,
+				100000000000000000000203 /* DurableQueuerDashboardSampleApp.swift */,
+				100000000000000000000204 /* SampleConstants.swift */,
+				100000000000000000000205 /* SampleControlBar.swift */,
+				100000000000000000000206 /* SampleJob.swift */,
+				100000000000000000000207 /* SampleJobError.swift */,
+				100000000000000000000208 /* SampleJobRegistryFactory.swift */,
+				100000000000000000000209 /* SamplePayloadFormatter.swift */,
+			);
+			name = DurableQueuerDashboardSample;
+			path = Sources/DurableQueuerDashboardSample;
+			sourceTree = "<group>";
+		};
+		100000000000000000000403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000210 /* DurableQueuerDashboardSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000501 /* DurableQueuerDashboardSample-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000601 /* Build configuration list for PBXNativeTarget */;
+			buildPhases = (
+				100000000000000000000302 /* Sources */,
+				100000000000000000000301 /* Frameworks */,
+				100000000000000000000303 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DurableQueuerDashboardSample-iOS";
+			packageProductDependencies = (
+				100000000000000000000701 /* DurableQueuer */,
+				100000000000000000000702 /* DurableQueuerDashboard */,
+				100000000000000000000703 /* GRDB */,
+			);
+			productName = DurableQueuerDashboardSample;
+			productReference = 100000000000000000000210 /* DurableQueuerDashboardSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					100000000000000000000501 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 100000000000000000000600 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100000000000000000000401;
+			packageReferences = (
+				100000000000000000000801 /* XCLocalSwiftPackageReference "../.." */,
+				100000000000000000000802 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			productRefGroup = 100000000000000000000403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000501 /* DurableQueuerDashboardSample-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000000303 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000101 /* DashboardSampleModel.swift in Sources */,
+				100000000000000000000102 /* DashboardSampleView.swift in Sources */,
+				100000000000000000000103 /* DurableQueuerDashboardSampleApp.swift in Sources */,
+				100000000000000000000104 /* SampleConstants.swift in Sources */,
+				100000000000000000000105 /* SampleControlBar.swift in Sources */,
+				100000000000000000000106 /* SampleJob.swift in Sources */,
+				100000000000000000000107 /* SampleJobError.swift in Sources */,
+				100000000000000000000108 /* SampleJobRegistryFactory.swift in Sources */,
+				100000000000000000000109 /* SamplePayloadFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000000901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		100000000000000000000902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		100000000000000000000903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Queue Monitor Sample";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DurableQueuerDashboardSample;
+				PRODUCT_NAME = DurableQueuerDashboardSample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		100000000000000000000904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Queue Monitor Sample";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.DurableQueuerDashboardSample;
+				PRODUCT_NAME = DurableQueuerDashboardSample;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000600 /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000901 /* Debug */,
+				100000000000000000000902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000601 /* Build configuration list for PBXNativeTarget */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000903 /* Debug */,
+				100000000000000000000904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		100000000000000000000801 /* XCLocalSwiftPackageReference "../.." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		100000000000000000000802 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		100000000000000000000701 /* DurableQueuer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 100000000000000000000801 /* XCLocalSwiftPackageReference "../.." */;
+			productName = DurableQueuer;
+		};
+		100000000000000000000702 /* DurableQueuerDashboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 100000000000000000000801 /* XCLocalSwiftPackageReference "../.." */;
+			productName = DurableQueuerDashboard;
+		};
+		100000000000000000000703 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 100000000000000000000802 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 100000000000000000000500 /* Project object */;
+}

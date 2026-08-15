@@ -1,0 +1,1 @@
+struct JobTimedOut: Error, Sendable {}
